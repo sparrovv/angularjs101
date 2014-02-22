@@ -1,0 +1,21 @@
+<h3>Add Place</h3>
+<form name='addPlace' ng-submit='save()' >
+  <p>
+    <input type=text ng-model='place.name' placeholder="Add name" />
+  <p>
+  </p>
+  <textarea type=text ng-model='place.description' placeholder="Add description"></textarea>
+  </p>
+  <p>
+  <select ng-model='place.price'>
+    <option value="0" disabled selected='selected'>Select price</option>
+    <option value="1">$</option>
+    <option value="2">$$</option>
+    <option value="3">$$$</option>
+    <option value="4">$$$$</option>
+  </select>
+  </p>
+  <p>
+  <input type=submit value='save'/>
+  </p>
+</form>

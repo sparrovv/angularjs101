@@ -1,0 +1,19 @@
+<h3>Lunch Places</h3>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Price</th>
+    <th></th>
+  </tr>
+  <tr ng-repeat="place in places | orderBy:'price'">
+    <td>{{place.name}}</td>
+    <td>{{place.description}}</td>
+
+    <td><price-tag price="{{place.price}}"></price-tag></td>
+
+    <td><a ng-href="#/place/{{place.id}}">details</a></td>
+
+    <td><a ng-href="" ng-click="remove(place.id)">rm</a></td>
+  </tr>
+</table>
