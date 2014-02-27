@@ -10,7 +10,7 @@ class: center, middle
 
 1. Why should you care?
 1. AngularJS features.
-1. Hand-on exercise.
+1. Hands-on exercise.
 
 ---
 
@@ -19,7 +19,7 @@ class: center, middle
 
 # More native-app-like experience
 
-###Gmail, trello, facebook
+###Gmail, Trello, Facebook
 
 ---
 
@@ -69,7 +69,7 @@ jqLite - mini-me of JQuery,
 Templates - partials,
 History,
 Factories,
-Dependeny Injection,
+Dependency Injection,
 Directives...
 </h2>
 
@@ -77,9 +77,9 @@ Directives...
 
 # Two way data binding
 
-User or program modifies model and views update auto-magically to reflect those changes.
+User or program modifies model and views update automagically to reflect those changes.
 
-Old school way to dynamically update text:
+Old-school way to dynamically update text:
 ```js
 <div id='foo'></div>
 $('#foo').text(message)
@@ -90,14 +90,14 @@ Angular way:
 <div id='foo'>{{message}}</div>
 ```
 
-Updates in the view progpagates to the model
+Updates in the view propagates to the model
 ```
 <input type='text' ng-model="message" />
 ```
 ---
 # Directives
 
-It's a way to extend html with new functionalities.
+It's a way to extend HTML with new functionalities.
 
 Examples:
 
@@ -140,14 +140,14 @@ Examples:
 
 > Angular is built around the belief that declarative code is better than imperative when it comes to building UIs and wiring software components together... By declaratively describing how the UI should change as your application state changes, you are freed from low level DOM manipulation tasks.
 
-Everything we ever want to create a templates is already in HTML
+Everything we ever want to create a template is already in HTML
 
 ```html
 <div ng-app="Weather" ng-controller="WeatherCtrl">
  <p>{{weather.temperature}}</p>
  <p>{{weather.humidity}}</p>
 
- <a ng-click="tomorrow()">weather for tomorrw</w>
+ <a ng-click="tomorrow()">weather for tomorrow</w>
  <a ng-click="sendByEmail()">Email me</w>
 </div>
 ```
@@ -163,7 +163,7 @@ They help filter or format data for display.
 
 ### Built-in filters:
 
-json, date, limitTo, lovercase, currency
+json, date, limitTo, lowercase, currency
 
 
 ```
@@ -182,13 +182,13 @@ json, date, limitTo, lovercase, currency
 
 # Dependency Injection
 
-- provides and wire up objects
-- services are not globally available
-- when we need something in our object, we can inject it in the constructor. 
+- Provides and wires up objects
+- Services are not globally available
+- When we need something in our object, we can inject it in the constructor.
 
-Advanatages:
+Advantages:
 
-- seperation of concerns
+- separation of concerns
 - testing
 
 ```javascript
@@ -316,7 +316,7 @@ Hello {{name}}!</p>
 
 1. Browser loads the HTML and then the angular.js script.
 1. Angular waits for **DOMContentLoaded** event and looks for the ng-app directive.
-1. The module speciﬁed in ng-app is used to conﬁgure the injector.
+1. The module specified in ng-app is used to configure the injector.
 1. The injector is used to create the $compile service and $rootScope.
 1. $compile compiles the DOM and links it with $rootScope.
 1. ng-init assigns World to the name property on the scope.
@@ -362,8 +362,8 @@ it('should invoke service with right paramaeters', function() {
 # What else you should know?
 
 ### Tools:
-- karma - automated test runner (http://karma-runner.github.io/0.10/index.html)
-- batarang - chrome plugin
+- Karma - automated test runner (http://karma-runner.github.io/0.10/index.html)
+- Batarang - Chrome plugin
 
 ### Documentation
 - http://docs.angularjs.org/guide
@@ -384,7 +384,7 @@ class: center, middle
 
 - Add validation to the form (http://docs.angularjs.org/guide/forms)
 - Add new fields: latitude and longitude (JS and server)
-- Add google maps support (http://angular-google-maps.org/use)
+- Add Google maps support (http://angular-google-maps.org/use)
 - Fix place remove link
 - Make a new action that will randomly pick a lunch option for you
 - Add votes
