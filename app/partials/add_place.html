@@ -1,5 +1,5 @@
 <h3>Add Place</h3>
-<form name='addPlace' ng-submit='save()' >
+<form name='addPlace' ng-submit='save()'>
   <p>
     <input type=text ng-model='place.name' placeholder="Add name" />
   <p>
@@ -15,6 +15,12 @@
     <option value="4">$$$$</option>
   </select>
   </p>
+  <p>
+    <input type=text ng-model='place.lat' placeholder="Latitude" />
+  <p>
+  <p>
+    <input type=text ng-model='place.long' placeholder="Longitude" />
+  <p>
   <p>
   <input type=submit value='save'/>
   </p>
