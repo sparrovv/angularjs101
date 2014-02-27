@@ -2,7 +2,8 @@
 
 // Declare app level module
 var lunchTime = angular.module('lunchTime', [
-  'ngRoute'
+  'ngRoute',
+  'google-maps'
 ]);
 
 lunchTime.config(['$routeProvider', function($routeProvider) {

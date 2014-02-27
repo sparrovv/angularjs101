@@ -35,18 +35,18 @@ class LunchTime < Sinatra::Base
   end
 end
 
-class Place < Struct.new(:id, :name, :description, :price)
+class Place < Struct.new(:id, :name, :description, :price, :lat, :long)
   def self.build(attrs={})
     new(
-      attrs.fetch(:id), attrs.fetch(:name), attrs.fetch(:description), attrs.fetch(:price)
+      attrs.fetch(:id), attrs.fetch(:name), attrs.fetch(:description), attrs.fetch(:price), attrs.fetch(:lat), attrs.fetch(:long)
     )
   end
 end
 
 class PlaceRepo
   PLACES = [
-    Place.build({id:'1', name: 'Pret a manager', description: 'Handmade natural food', price: 1}),
-    Place.build({id:'2', name: 'Moorgate curry', description: 'Cheap and good cheackpea curry', price: 1})
+    Place.build({id:'1', name: 'Pret a manager', description: 'Handmade natural food', price: 1, lat: 45, long: 45}),
+    Place.build({id:'2', name: 'Moorgate curry', description: 'Cheap and good cheackpea curry', price: 1, lat: 45, long: 45})
   ]
 
   def self.all

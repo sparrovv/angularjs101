@@ -12,6 +12,13 @@ lunchTime.controller('PlacesCtrl', function($scope, Places) {
 
 lunchTime.controller('PlaceCtrl', function($scope, Places, $routeParams) {
   $scope.place = Places.findById($routeParams.id);
+  $scope.map = {
+    center: {
+      latitude: $scope.place.lat,
+      longitude: $scope.place.long
+    },
+    zoom: 8
+  };
 });
 
 lunchTime.controller('NewCtrl', function($scope, $location, Places) {
