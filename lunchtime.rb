@@ -45,8 +45,8 @@ end
 
 class PlaceRepo
   PLACES = [
-    Place.build({id:'1', name: 'Pret a manager', description: 'Handmade natural food', price: 1, lat: 45, long: 45}),
-    Place.build({id:'2', name: 'Moorgate curry', description: 'Cheap and good cheackpea curry', price: 1, lat: 45, long: 45})
+    Place.build({id:'1', name: 'Pret A Manger', description: 'Handmade natural food', price: 1, lat: 45, long: 45}),
+    Place.build({id:'2', name: 'Moorgate curry', description: 'Cheap and good chickpea curry', price: 1, lat: 45, long: 45})
   ]
 
   def self.all
